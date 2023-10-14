@@ -8,4 +8,5 @@ import com.API.REST.Model.User;
 @Repository
 public interface UserRepository extends JpaRepository<User, Long>{
     
+    boolean existsByAccountNumber(String accountNumber);
 }
